@@ -1,0 +1,224 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  padding-top: 50px;
+  background: rgb(74, 49, 49);
+}
+
+.warning {
+  display: none;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  background-color: red;
+  padding: 20px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 550px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #303d74;
+  box-shadow: 9px 14px 10px rgb(128, 119, 119);
+}
+
+section {
+  position: relative;
+  max-width: 450px;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #265b6a;
+}
+
+.title-primary {
+  font-size: 28px;
+  margin: 10px 0;
+}
+
+.title-secondary {
+  font-size: 20px;
+}
+
+input,
+textarea {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  width: 100%;
+  padding: 10px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.input-label {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.list {
+  list-style-type: none;
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #2a7e43;
+}
+
+span.left-side {
+  display: flex;
+  width: 70%;
+}
+
+span.text {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  word-break: break-all;
+}
+
+.li-text-edit {
+  background-color: #2a7e43;
+  color: #fff;
+  padding: 0;
+  outline: none;
+  border: 2px inset grey;
+  display: none;
+}
+
+.btn {
+  width: 29px;
+  height: 29px;
+}
+
+.btn-add {
+  position: absolute;
+  top: 40px;
+  right: 10px;
+  background-color: #2a7e43;
+  color: #fff;
+}
+
+.btn-clear {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  margin-bottom: 20px;
+  padding: 5px 10px;
+  background-color: #000;
+  color: #fff;
+}
+
+.btn-check {
+  background-color: #fff;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.btn-edit {
+  background-color: #03396c;
+  color: #fff;
+}
+
+.btn-remove {
+  background-color: red;
+  color: #fff;
+}
+
+.btn-warning-remove {
+  background-color: red;
+  color: #fff;
+}
+
+.fa-check {
+  color: #fff;
+}
+
+/* Classes manipulated by JS*/
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.black-tick {
+  color: #000;
+}
+
+.strike-through {
+  text-decoration: line-through;
+}
+
+.btn-edit-margin {
+  margin-right: 5px;
+}
+
+.overlay {
+  position: absolute;
+  background: rgba(14, 12, 12, 0.7);
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 4;
+  display: none;
+}
+
+.overlay.active {
+  display: block;
+}
+
+.modal {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: 30%;
+  z-index: 5;
+  max-width: 400px;
+  width: 100%;
+  min-height: 250px;
+  background: rgb(71, 42, 42);
+  border-radius: 15px;
+}
+
+.modal input {
+  width: 80%;
+  margin-bottom: 20px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+}
+
+.modal button {
+  padding: 10px;
+}
+
+.modal button:first-child {
+  background: red;
+}
+.modal button:last-child {
+  background: blue;
+}
+
+.modal.active {
+  display: flex;
+}

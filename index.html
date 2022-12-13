@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>To do List</title>
+  </head>
+  <body>
+    <main>
+      <!-- Modal-edit -->
+      <div class="overlay"></div>
+      <div class="modal">
+        <input type="text" class="modal-input" />
+        <div class="modal-btns">
+          <button id="cancel">cancel</button>
+          <button id="change">change</button>
+        </div>
+      </div>
+      <!-- title -->
+      <h1 class="title-primary">Todo List</h1>
+
+      <!-- add todo -->
+      <section>
+        <label for="todo" class="input-label">Add New</label>
+        <input type="text" name="todo" id="todo" placeholder="type here..." />
+        <button class="btn btn-add">+</button>
+      </section>
+
+      <!-- filter todos -->
+      <section>
+        <label for="filter" class="input-label">Filter</label>
+        <input
+          type="text"
+          name="filter"
+          id="filter"
+          placeholder="type here..."
+        />
+      </section>
+
+      <!-- active todos -->
+      <section>
+        <h2 class="title-secondary title-active">Active</h2>
+        <ul class="list list-active"></ul>
+      </section>
+
+      <!-- completed todos -->
+      <section>
+        <h2 class="title-secondary title-completed">Completed</h2>
+        <ul class="list list-completed"></ul>
+      </section>
+
+      <!-- clear all option -->
+      <!-- <button class="btn-clear">CLEAR ALL</button> -->
+
+      <div class="warning">
+        <span class="message">Write Something fill the field please!</span>
+        <button class="btn btn-warning-remove">Ok</button>
+      </div>
+    </main>
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
